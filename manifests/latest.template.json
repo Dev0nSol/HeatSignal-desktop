@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "published_at": "2025-08-24T00:00:00Z",
+  "channel": "stable",
+  "files": [{
+    "os": "windows",
+    "arch": "x64",
+    "filename": "HeatSignal-0.1.0-setup.exe",
+    "size": 12345678,
+    "sha256": "PUT_SHA256_OF_EXE"
+  }],
+  "signature_ed25519": "PUT_MINISIGN_SIG_BASE64"
+}

@@ -1,0 +1,14 @@
+{
+  "keys": [
+    {
+      "name": "primary",
+      "algorithm": "ed25519/minisign",
+      "public_key_base64": "REPLACE_WITH_PRIMARY_PUBLIC_KEY_BASE64"
+    },
+    {
+      "name": "backup",
+      "algorithm": "ed25519/minisign",
+      "public_key_base64": "REPLACE_WITH_BACKUP_PUBLIC_KEY_BASE64"
+    }
+  ]
+}
