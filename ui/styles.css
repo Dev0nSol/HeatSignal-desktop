@@ -1,0 +1,36 @@
+:root{
+  --bg:#1E1F24;
+  --surface:#121316;
+  --hover:#16181C;
+  --border:#2A2D32;
+  --text:#EDEFF2;
+  --muted:#A5A9B1;
+  --accent:#FF6A00;
+  --error:#FF3B30;
+  --warn:#FFD60A;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  height:100vh; display:flex; flex-direction:column;
+}
+.titlebar{
+  height:44px; background:var(--surface); border-bottom:1px solid var(--border);
+  display:flex; align-items:center; justify-content:space-between; padding:0 12px;
+  -webkit-app-region: drag;
+}
+.title{font-weight:600; letter-spacing:0.2px}
+.window-buttons .dot{display:inline-block; width:8px; height:8px; margin-left:6px; border-radius:50%; background:var(--border)}
+.container{max-width:900px; margin:32px auto; padding:0 20px; width:100%}
+h1{font-weight:600; margin-top:0}
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px; margin:16px 0;
+}
+.row{display:flex; align-items:center; justify-content:space-between; padding:8px 0; border-bottom:1px dashed var(--border)}
+.row:last-child{border-bottom:none}
+code{background:#0f1114; padding:4px 6px; border-radius:6px; color:var(--muted)}
+.note{color:var(--muted)}
+.footer{margin-top:auto; text-align:center; color:var(--muted); padding:16px; border-top:1px solid var(--border); background:var(--surface)}

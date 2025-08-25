@@ -1,0 +1,45 @@
+{
+  "package": {
+    "productName": "HeatSignal",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "HeatSignal",
+        "width": 1280,
+        "height": 800,
+        "resizable": false,
+        "fullscreen": false,
+        "maximized": false,
+        "decorations": false,
+        "transparent": false
+      }
+    ],
+    "bundle": {
+      "identifier": "com.heatsignal.app",
+      "icon": [],
+      "targets": [
+        "nsis"
+      ],
+      "windows": {
+        "nsis": {
+          "installerIcon": null,
+          "installMode": "perUser",
+          "shortcutFolder": "HeatSignal",
+          "allowToChangeInstallationDirectory": false
+        }
+      }
+    },
+    "security": {
+      "csp": null
+    }
+  },
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "ui",
+    "distDir": "ui"
+  }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeatSignal — V1 Scaffold</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const v = document.getElementById('version');
+      fetch('http://127.0.0.1:17888/version').then(r=>r.json()).then(j=>{
+        v.textContent = j.version || 'dev';
+      }).catch(()=>{ v.textContent = 'dev'; });
+    });
+  </script>
+</head>
+<body>
+  <header data-tauri-drag-region="true" class="titlebar">
+    <div class="title">HeatSignal</div>
+    <div class="window-buttons">
+      <span class="dot"></span><span class="dot"></span>
+    </div>
+  </header>
+  <main class="container">
+    <h1>HeatSignal V1 — Scaffold</h1>
+    <p>This is a placeholder UI. The real app will connect Phantom in your default browser and talk to a local FastAPI backend.</p>
+    <div class="card">
+      <div class="row">
+        <div>Backend status:</div>
+        <code id="status">use scripts/start-dev.ps1</code>
+      </div>
+      <div class="row">
+        <div>App version:</div>
+        <code id="version">dev</code>
+      </div>
+    </div>
+    <p class="note">Window is fixed to 1280×800, non-resizable, dark theme.</p>
+  </main>
+  <footer class="footer">Not financial advice. For research only.</footer>
+</body>
+</html>
