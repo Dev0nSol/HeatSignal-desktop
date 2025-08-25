@@ -1,0 +1,14 @@
+[package]
+name = "heatsignal"
+version = "0.1.0"
+description = "HeatSignal desktop app"
+authors = ["HeatSignal"]
+edition = "2021"
+rust-version = "1.70"
+
+[dependencies]
+tauri = { version = "1", features = ["window-all"] }
+tauri-plugin-single-instance = "2"
+
+[build-dependencies]
+tauri-build = "1"
