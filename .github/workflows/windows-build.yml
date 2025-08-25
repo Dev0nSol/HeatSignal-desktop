@@ -1,0 +1,16 @@
+name: Windows Build (placeholder)
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  noop:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Print repo status
+        run: |
+          echo "Repo checked out."
+          echo "This workflow is a placeholder and won't try to build yet."
+          echo "Enable your real build steps when the code is added."
